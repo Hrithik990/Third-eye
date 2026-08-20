@@ -773,6 +773,7 @@ section { padding: 90px 0; }
 @media (max-width: 900px) {
   .tile-grid { grid-template-columns: 1fr; }
   .split, .split.reverse, .teacher-row { grid-template-columns: 1fr; }
+  .split[style*="grid-template-columns"] { grid-template-columns: 1fr !important; }
   .split.reverse .split-media { order: 0; }
   .retreats { grid-template-columns: 1fr; }
   .card-row { grid-template-columns: 1fr; }
@@ -787,7 +788,9 @@ section { padding: 90px 0; }
     height: 100vh;
     width: 78%;
     max-width: 320px;
-    background: var(--navy-dark);
+    background: rgba(23, 43, 36, 0.38);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
@@ -797,11 +800,13 @@ section { padding: 90px 0; }
     gap: 26px;
     z-index: 60;
   }
+  .nav-links a { color: #fff; }
   .nav-links.open { transform: translateX(0); }
   .nav-toggle { display: block; }
   .container { padding: 0 22px; }
   section { padding: 60px 0; }
   .retreats-media, .split-media, .teacher-media { min-height: 280px; }
+  .split > div:first-child { min-height: 360px; }
   .site-footer { padding-top: 44px; }
   .footer-grid { grid-template-columns: repeat(2, 1fr); gap: 28px 20px; }
   .footer-brand, .footer-contact { text-align: left; }
