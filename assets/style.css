@@ -131,7 +131,8 @@ h1, h2, h3, h4 {
 }
 .brand .name {
   font-family: var(--font-heading);
-  font-weight: 800;
+  font-weight: 700;
+  -webkit-text-stroke: 0.3px currentColor;
   font-size: 0.88rem;
   letter-spacing: 0.05em;
   line-height: 1.15;
@@ -155,6 +156,7 @@ h1, h2, h3, h4 {
   font-family: var(--font-heading);
   font-size: 0.78rem;
   font-weight: 700;
+  -webkit-text-stroke: 0.35px currentColor;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   padding: 6px 0;
