@@ -93,14 +93,20 @@
                 <label>
                   Contact Number
                   <div class="phone-field">
-                    <select name="country_code">
-                      <option value="+977" selected>+977</option>
-                      <option value="+91">+91</option>
-                      <option value="+1">+1</option>
-                      <option value="+44">+44</option>
-                      <option value="+61">+61</option>
-                      <option value="+971">+971</option>
-                    </select>
+                    <div class="country-selector" id="countrySelector">
+                      <input type="hidden" name="country_code" id="countryCodeInput" value="+977" />
+                      <button type="button" class="country-selector__toggle" id="countrySelectorToggle" aria-haspopup="listbox" aria-expanded="false">
+                        <span class="country-selector__flag" id="selectedFlag">🇳🇵</span>
+                        <span class="country-selector__code" id="selectedCode">+977</span>
+                        <svg class="country-selector__chevron" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                      </button>
+                      <div class="country-selector__dropdown" id="countryDropdown" role="listbox">
+                        <div class="country-selector__search-wrap">
+                          <input type="text" class="country-selector__search" id="countrySearch" placeholder="Search country…" autocomplete="off" />
+                        </div>
+                        <ul class="country-selector__list" id="countryList"></ul>
+                      </div>
+                    </div>
                     <input
                       type="tel"
                       name="phone"
