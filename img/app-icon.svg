@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 120" role="img" aria-label="Third Eye app icon">
+  <rect width="220" height="120" fill="#0b0b0b"/>
+  <g fill="#f5f1ea" stroke="#f5f1ea" stroke-width="2">
+    <circle cx="32" cy="60" r="22"/>
+    <circle cx="82" cy="60" r="22"/>
+    <circle cx="132" cy="60" r="22"/>
+    <circle cx="182" cy="60" r="22"/>
+  </g>
+  <g fill="#0b0b0b" font-family="Arial, Helvetica, sans-serif" font-weight="700" text-anchor="middle">
+    <text x="32" y="66" font-size="16">ig</text>
+    <text x="82" y="67" font-size="18">f</text>
+    <text x="132" y="67" font-size="16">wa</text>
+    <text x="182" y="67" font-size="18">@</text>
+  </g>
+</svg>
