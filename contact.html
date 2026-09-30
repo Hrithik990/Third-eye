@@ -6,8 +6,9 @@
     <title>Contact | Third Eye Healing Centre</title>
     <meta
       name="description"
-      content="Get in touch with Third Eye Healing Centre — Thamel, Kathmandu. Call, WhatsApp, or send us a message."
+      content="Contact Third Eye Healing and Yoga Center in Thamel, Kathmandu. Call or WhatsApp us to plan a sound healing session."
     />
+    <link rel="icon" type="image/jpeg" href="img/logo.jpg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Inter:wght@500;600;700&display=swap"
@@ -51,11 +52,10 @@
       <div class="container">
         <div class="contact-layout">
           <div class="contact-card">
-            <p class="eyebrow">Get In Touch</p>
-            <h2 style="margin-bottom: 6px">Send Us A Message</h2>
+            <p class="eyebrow">Sound Healing</p>
+            <h2 style="margin-bottom: 6px">Book a Session</h2>
             <p class="lede" style="margin-left: 0">
-              Have a question about classes, retreats, or trekking adventures?
-              Feel free to reach out to Third Eye Healing Centre.
+              Ask us about singing bowls or booking a sound session.
             </p>
 
             <form id="contactForm">
@@ -90,10 +90,29 @@
                     placeholder="Enter your email"
                   />
                 </label>
-                <label>
-                  Contact Number
-                  <div class="phone-field">
-                    <select name="country_code" aria-label="Country code">
+                <label for="contact-phone">Contact Number</label>
+                <div class="phone-field">
+                    <div class="country-picker" data-country-picker>
+                      <button
+                        class="country-picker__trigger"
+                        type="button"
+                        aria-label="Choose country calling code"
+                        aria-haspopup="listbox"
+                        aria-expanded="false"
+                        aria-controls="country-options"
+                      >
+                        <img data-country-flag src="https://flagcdn.com/w40/np.png" alt="" width="24" height="18" />
+                        <span data-country-label>Nepal (+977)</span>
+                        <span class="country-picker__chevron" aria-hidden="true">⌄</span>
+                      </button>
+                      <div class="country-picker__menu" data-country-menu hidden>
+                        <label class="country-picker__search-label">
+                          Search countries
+                          <input class="country-picker__search" type="search" data-country-search autocomplete="off" />
+                        </label>
+                        <div class="country-picker__options" id="country-options" role="listbox" aria-label="Countries and calling codes"></div>
+                      </div>
+                      <select class="country-picker__native" name="country_code" aria-label="Country calling code" tabindex="-1" aria-hidden="true">
                       <option value="+977" selected>🇳🇵 Nepal (+977)</option>
                       <option value="+1">🇺🇸 United States (+1)</option>
                       <option value="+1">🇨🇦 Canada (+1)</option>
@@ -309,13 +328,14 @@
                       <option value="+996">🇰🇬 Kyrgyzstan (+996)</option>
                       <option value="+998">🇺🇿 Uzbekistan (+998)</option>
                     </select>
+                    </div>
                     <input
+                      id="contact-phone"
                       type="tel"
                       name="phone"
                       placeholder="Enter your contact number"
                     />
                   </div>
-                </label>
               </div>
 
               <label>
@@ -336,10 +356,9 @@
           </div>
 
           <div class="info-panel">
-            <h3>Hi! We Are Always Here To Help You.</h3>
+            <h3>Need help planning your visit?</h3>
             <p class="contact-intro">
-              Questions about yoga, sound healing, retreats, or your first
-              visit? We are happy to help you find the right place to begin.
+              Questions about sound healing or your visit? Call or message us.
             </p>
 
             <a href="tel:+9779851203719" class="info-box">
@@ -367,7 +386,14 @@
               <span class="info-ico">📍</span>
               <span>
                 <strong>Location</strong>
-                <span>Thamel, Kathmandu</span>
+                <span>Thamel, Kathmandu, Bagmati Province 44600</span>
+              </span>
+            </div>
+
+            <div class="info-box" style="cursor: default">
+              <span>
+                <strong>Opening Hours</strong>
+                <span>Every day, 7:00 AM to 8:00 PM</span>
               </span>
             </div>
 
@@ -442,7 +468,8 @@
 
         <div class="map-embed map-below">
           <iframe
-            src="https://www.google.com/maps?q=Third+Eye+Healing+Centre+Thamel+Kathmandu&output=embed"
+            title="Map showing Third Eye Healing and Yoga Center in Thamel, Kathmandu"
+            src="https://www.google.com/maps?q=Third+Eye+Healing+and+Yoga+Center%2C+Ashok+Galli%2C+Kathmandu+44600&output=embed"
             width="100%"
             height="320"
             style="border: 0"
@@ -473,8 +500,8 @@
         </nav>
         <nav class="footer-col" aria-label="Services">
           <span class="footer-heading">Services</span>
-          <a href="classes.html">Yoga Classes</a>
-          <a href="events.html">Retreats</a>
+          <a href="classes.html#sound-healing">Sound Healing</a>
+          <a href="classes.html#yoga">Yoga Classes</a>
         </nav>
         <nav class="footer-col" aria-label="Discover">
           <span class="footer-heading">Discover</span>
@@ -483,7 +510,7 @@
         </nav>
         <div class="footer-col footer-contact">
           <span class="footer-heading">Visit Us</span>
-          <span>Thamel, Kathmandu</span>
+          <span>Thamel, Kathmandu 44600</span>
           <a href="tel:+9779851203719">985-1203719</a>
         </div>
       </div>
@@ -494,26 +521,26 @@
           target="_blank"
           rel="noopener"
           aria-label="Instagram"
-          >ig</a
+          ><img src="https://cdn.simpleicons.org/instagram/ffffff" alt="" width="16" height="16" loading="lazy" /></a
         >
         <a
           href="https://www.facebook.com/profile.php?id=61592808584287"
           target="_blank"
           rel="noopener"
           aria-label="Facebook"
-          >f</a
+          ><img src="https://cdn.simpleicons.org/facebook/ffffff" alt="" width="16" height="16" loading="lazy" /></a
         >
         <a
           href="https://wa.me/9779851203719"
           target="_blank"
           rel="noopener"
           aria-label="WhatsApp"
-          >wa</a
+          ><img src="https://cdn.simpleicons.org/whatsapp/ffffff" alt="" width="16" height="16" loading="lazy" /></a
         >
         <a
           href="mailto:thirdeyehealingandyogacenter@gmail.com"
           aria-label="Email"
-          >@</a
+          ><img src="assets/icons/mail.svg" alt="" width="16" height="16" /></a
         >
       </div>
       <div class="footer-bottom">
@@ -718,14 +745,130 @@
         { code: "+998", country: "Uzbekistan", flag: "🇺🇿" },
       ];
 
-      const countrySelect = document.getElementById("countryCode");
-      countryDialCodes.forEach(({ code, country, flag }) => {
-        const option = document.createElement("option");
-        option.value = code;
-        option.textContent = `${flag} ${country} (${code})`;
-        if (code === "+977") option.selected = true;
-        countrySelect.appendChild(option);
-      });
+      const countrySelect = document.querySelector('select[name="country_code"]');
+      if (countrySelect && countrySelect.options.length === 0) {
+        countryDialCodes.forEach(({ code, country, flag }) => {
+          const option = document.createElement("option");
+          option.value = code;
+          option.textContent = `${flag} ${country} (${code})`;
+          if (code === "+977") option.selected = true;
+          countrySelect.appendChild(option);
+        });
+      }
+
+      const countryPicker = document.querySelector("[data-country-picker]");
+      if (countrySelect && countryPicker) {
+        const trigger = countryPicker.querySelector(".country-picker__trigger");
+        const menu = countryPicker.querySelector("[data-country-menu]");
+        const search = countryPicker.querySelector("[data-country-search]");
+        const optionsList = countryPicker.querySelector(".country-picker__options");
+        const selectedFlag = countryPicker.querySelector("[data-country-flag]");
+        const selectedLabel = countryPicker.querySelector("[data-country-label]");
+        const countryItems = [];
+
+        Array.from(countrySelect.options).forEach((option, index) => {
+          const flagCharacters = Array.from(option.textContent).filter((character) => {
+            const codePoint = character.codePointAt(0);
+            return codePoint >= 0x1f1e6 && codePoint <= 0x1f1ff;
+          }).slice(0, 2);
+          const isoCode = flagCharacters.map((character) =>
+            String.fromCharCode(character.codePointAt(0) - 127397)
+          ).join("").toLowerCase();
+          if (isoCode.length !== 2) return;
+
+          const label = option.textContent.replace(flagCharacters.join(""), "").trim();
+          const item = document.createElement("button");
+          const flag = document.createElement("img");
+          const name = document.createElement("span");
+          item.type = "button";
+          item.className = "country-picker__option";
+          item.setAttribute("role", "option");
+          item.setAttribute("aria-selected", "false");
+          flag.src = "https://flagcdn.com/w40/" + isoCode + ".png";
+          flag.alt = "";
+          flag.width = 24;
+          flag.height = 18;
+          flag.loading = "lazy";
+          flag.className = "country-picker__flag";
+          name.textContent = label;
+          item.appendChild(flag);
+          item.appendChild(name);
+          optionsList.appendChild(item);
+          countryItems.push({ button: item, index: index, isoCode: isoCode, label: label });
+
+          item.addEventListener("click", function () {
+            countrySelect.selectedIndex = index;
+            countrySelect.dispatchEvent(new Event("change", { bubbles: true }));
+            menu.hidden = true;
+            trigger.setAttribute("aria-expanded", "false");
+            trigger.focus();
+          });
+        });
+
+        function updateCountrySelection() {
+          const selected = countryItems.find((item) => item.index === countrySelect.selectedIndex);
+          if (!selected) return;
+          selectedFlag.src = "https://flagcdn.com/w40/" + selected.isoCode + ".png";
+          selectedLabel.textContent = selected.label;
+          countryItems.forEach((item) => {
+            item.button.setAttribute("aria-selected", item.index === selected.index ? "true" : "false");
+          });
+        }
+
+        function closeCountryMenu() {
+          menu.hidden = true;
+          trigger.setAttribute("aria-expanded", "false");
+        }
+
+        function filterCountries() {
+          const query = search.value.trim().toLowerCase();
+          countryItems.forEach((item) => {
+            item.button.hidden = !item.label.toLowerCase().includes(query);
+          });
+        }
+
+        function focusCountryOption(direction) {
+          const visibleItems = countryItems.filter((item) => !item.button.hidden);
+          if (!visibleItems.length) return;
+          const currentIndex = visibleItems.findIndex((item) => item.button === document.activeElement);
+          const nextIndex = (currentIndex + direction + visibleItems.length) % visibleItems.length;
+          visibleItems[nextIndex].button.focus();
+        }
+
+        trigger.addEventListener("click", function () {
+          menu.hidden = !menu.hidden;
+          trigger.setAttribute("aria-expanded", menu.hidden ? "false" : "true");
+          if (!menu.hidden) {
+            search.value = "";
+            filterCountries();
+            search.focus();
+          }
+        });
+        search.addEventListener("input", filterCountries);
+        search.addEventListener("keydown", function (event) {
+          if (event.key === "Escape") {
+            closeCountryMenu();
+            trigger.focus();
+          } else if (event.key === "ArrowDown") {
+            event.preventDefault();
+            focusCountryOption(1);
+          }
+        });
+        optionsList.addEventListener("keydown", function (event) {
+          if (event.key === "ArrowDown" || event.key === "ArrowUp") {
+            event.preventDefault();
+            focusCountryOption(event.key === "ArrowDown" ? 1 : -1);
+          } else if (event.key === "Escape") {
+            closeCountryMenu();
+            trigger.focus();
+          }
+        });
+        document.addEventListener("click", function (event) {
+          if (!countryPicker.contains(event.target)) closeCountryMenu();
+        });
+        countrySelect.addEventListener("change", updateCountrySelection);
+        updateCountrySelection();
+      }
     </script>
 
     <script src="assets/script.js"></script>

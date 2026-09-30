@@ -3,11 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Third Eye Healing Centre | Yoga &amp; Meditation, Kathmandu</title>
+    <title>Sound Healing in Kathmandu | Third Eye Healing Centre</title>
     <meta
       name="description"
-      content="Third Eye Healing Centre in Thamel, Kathmandu — daily yoga, meditation, trekking adventures and retreats led by Chandra Sapkota."
+      content="Experience sound healing, singing bowls, and meditation at Third Eye Healing and Yoga Center in Thamel, Kathmandu."
     />
+    <link rel="icon" type="image/jpeg" href="img/logo.jpg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Inter:wght@500;600;700&display=swap"
@@ -15,23 +16,25 @@
     />
     <link rel="stylesheet" href="assets/style.css" />
   </head>
-  <body>
-    <header class="site-header">
+  <body class="home-page">
+    <header class="site-header home-header">
       <div class="container">
         <a href="index.html" class="brand">
           <img src="img/download.png" alt="Third Eye Logo" />
           <span class="name">Third Eye<br /><small>Healing Centre</small></span>
         </a>
-        <button class="nav-toggle" aria-label="Toggle menu">
+        <button class="nav-toggle" aria-label="Toggle menu" aria-controls="main-nav" aria-expanded="false">
           <span></span><span></span><span></span>
         </button>
-        <ul class="nav-links">
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="classes.html">Classes</a></li>
-          <li><a href="events.html">Events</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
+        <nav class="site-nav" aria-label="Main navigation">
+          <ul class="nav-links" id="main-nav">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="classes.html">Classes</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
       </div>
     </header>
 
@@ -39,8 +42,13 @@
       class="hero tall"
       style="background-image: url(&quot;/img/ww.jpeg&quot;)"
     >
+      <div class="hero-auras" aria-hidden="true">
+        <div class="aura aura--gold"></div>
+        <div class="aura aura--teal"></div>
+        <div class="aura aura--violet"></div>
+      </div>
       <div class="hero-content container">
-        <h1>Awaken Your<br />Inner Peace</h1>
+        <h1>Find Stillness<br />Through Sound</h1>
       </div>
     </section>
     <div class="trim"></div>
@@ -56,7 +64,7 @@
             <div class="tile-copy">
               <p class="eyebrow">Spirit Festival</p>
               <h3>A Global Celebration</h3>
-              <p>Yoga, dance, music and healing — one weekend a year.</p>
+              <p>Yoga, dance, music, and healing come together for one weekend each year.</p>
             </div>
           </a>
           <a href="events.html" class="tile">
@@ -67,9 +75,7 @@
             <div class="tile-copy">
               <p class="eyebrow">Events</p>
               <h3>Explore &amp; Grow</h3>
-              <p>
-                Movement, meditation and personal growth throughout the year.
-              </p>
+              <p>Movement, meditation, and personal growth throughout the year.</p>
             </div>
           </a>
         </div>
@@ -92,40 +98,156 @@
       </div>
     </section>
 
-    <section class="teacher-showcase">
+    <section class="teacher-showcase" id="sound-sessions">
       <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Sound Healing</p>
+          <h2>Sessions for Stillness</h2>
+          <p class="lede">Guided sound baths with singing bowls and gongs.</p>
+        </div>
         <div class="teacher-cards">
-          <a href="about.html" class="teacher-card teacher-card--yoga">
+          <a href="about.html" class="teacher-card teacher-card--sound reveal" style="--reveal-delay: 0ms">
+            <img
+              class="teacher-card__image"
+              src="/img/sound.jpeg"
+              alt="Practitioner in a meditation and sound healing session"
+            />
+            <div class="teacher-card__content">
+              <p class="eyebrow">Sound Healing Practitioner</p>
+              <h3>Bimal Pandey</h3>
+              <p>Guided singing bowl sessions and sound baths.</p>
+            </div>
+          </a>
+
+          <a href="classes.html#yoga" class="teacher-card teacher-card--yoga reveal" style="--reveal-delay: 100ms">
             <img
               class="teacher-card__image"
               src="/img/yoga.jpeg "
               alt="Yoga class in progress"
+              loading="lazy"
             />
             <div class="teacher-card__content">
               <p class="eyebrow">Yoga</p>
-              <h3>Yoga Teacher</h3>
-              <p>
-                Guided breathwork, mindful movement and grounding practices for
-                everyday strength and balance.
-              </p>
+              <h3>Yoga Classes</h3>
+              <p>Mindful movement and breathwork for everyday balance.</p>
             </div>
           </a>
-
-          <a href="about.html" class="teacher-card teacher-card--sound">
+          <a href="classes.html#singing-bowls" class="teacher-card teacher-card--sound reveal" style="--reveal-delay: 200ms">
             <img
               class="teacher-card__image"
-              src="/img/sound.jpeg"
-              alt="Sound healing session"
+              src="img/bowl.jpeg"
+              alt="Handcrafted singing bowl used in a restorative session"
+              loading="lazy"
             />
             <div class="teacher-card__content">
-              <p class="eyebrow">Sound Healing</p>
-              <h3>Sound Healing Guide</h3>
-              <p>
-                Restorative sound sessions that calm the nervous system and
-                support deep inner ease.
-              </p>
+              <p class="eyebrow">Singing Bowls &amp; Gongs</p>
+              <h3>Sound Instruments</h3>
+              <p>Traditional bowls and gongs used in restorative sessions.</p>
             </div>
           </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews-section" id="reviews" aria-labelledby="reviews-title">
+      <div class="container">
+        <div class="reviews-heading reveal">
+          <div>
+            <p class="eyebrow">Guest reviews</p>
+              <h2 id="reviews-title">Sound healing, in their words.</h2>
+          </div>
+            <div class="rating-badge" aria-label="4.9 out of 5 stars on Google and more than 100 five-star reviews across platforms and in person">
+              <strong>4.9</strong>
+            <span class="rating-stars" aria-hidden="true">★★★★★</span>
+              <span>Google rating</span>
+              <span class="rating-total">100+ five-star reviews across platforms and in person</span>
+          </div>
+        </div>
+        <div class="carousel reveal" data-carousel aria-roledescription="carousel" aria-label="Guest testimonials">
+          <div class="carousel-viewport">
+            <div class="carousel-track" aria-live="polite">
+              <article class="review-card" role="group" aria-roledescription="slide" aria-label="1 of 10">
+                <p class="review-stars" aria-label="5 out of 5 stars">★★★★★</p>
+                <blockquote>“A great singing bowl and meditation experience in a wonderful setting with excellent teaching.”</blockquote>
+                <div class="review-author"><span class="review-avatar" aria-hidden="true">XC</span><span><strong>Xiaojing Cheng</strong></span></div>
+              </article>
+              <article class="review-card" role="group" aria-roledescription="slide" aria-label="2 of 10" aria-hidden="true">
+                <p class="review-stars" aria-label="5 out of 5 stars">★★★★★</p>
+                <blockquote>“After returning from the Everest Base Camp trek, I joined the one-hour sound bath. The vibrations from the seven-metal singing bowls eased my physical fatigue and mental stress. I could feel the sound resonating throughout my body. It was truly a sanctuary in the heart of Kathmandu.”</blockquote>
+                <div class="review-author"><span class="review-avatar" aria-hidden="true">UA</span><span><strong>Utkrista Adhikari</strong></span></div>
+              </article>
+              <article class="review-card" role="group" aria-roledescription="slide" aria-label="3 of 10" aria-hidden="true">
+                <p class="review-stars" aria-label="5 out of 5 stars">★★★★★</p>
+                <blockquote>“From the moment you step inside, you are welcomed with warmth and a serene atmosphere. The space is spotless, soothing, and genuinely healing. If you want to decompress, ease anxiety, or learn about sound therapy, this is the place to visit.”</blockquote>
+                <div class="review-author"><span class="review-avatar" aria-hidden="true">HS</span><span><strong>Hrithik Sapkota</strong></span></div>
+              </article>
+              <article class="review-card" role="group" aria-roledescription="slide" aria-label="4 of 10" aria-hidden="true">
+                <p class="review-stars" aria-label="5 out of 5 stars">★★★★★</p>
+                <blockquote>“A great experience with instructors Bimal and Chandra.”</blockquote>
+                <div class="review-author"><span class="review-avatar" aria-hidden="true">NK</span><span><strong>Naveen Kumar</strong></span></div>
+              </article>
+              <article class="review-card" role="group" aria-roledescription="slide" aria-label="5 of 10" aria-hidden="true">
+                <p class="review-stars" aria-label="5 out of 5 stars">★★★★★</p>
+                <blockquote>“A wonderful, experienced yoga teacher.”</blockquote>
+                <div class="review-author"><span class="review-avatar" aria-hidden="true">RK</span><span><strong>Rakesh Kumar</strong></span></div>
+              </article>
+              <article class="review-card" role="group" aria-roledescription="slide" aria-label="6 of 10" aria-hidden="true">
+                <p class="review-stars" aria-label="5 out of 5 stars">★★★★★</p>
+                <blockquote>“A lovely place to experience sound healing. I really appreciated the session.”</blockquote>
+                <div class="review-author"><span class="review-avatar" aria-hidden="true">PS</span><span><strong>Piyush Kumar Singh</strong></span></div>
+              </article>
+              <article class="review-card" role="group" aria-roledescription="slide" aria-label="7 of 10" aria-hidden="true">
+                <p class="review-stars" aria-label="5 out of 5 stars">★★★★★</p>
+                <blockquote>“The person was very cooperative and helpful.”</blockquote>
+                <div class="review-author"><span class="review-avatar" aria-hidden="true">SD</span><span><strong>Sangeeta Devi</strong></span></div>
+              </article>
+              <article class="review-card" role="group" aria-roledescription="slide" aria-label="8 of 10" aria-hidden="true">
+                <p class="review-stars" aria-label="5 out of 5 stars">★★★★★</p>
+                <p class="review-note">Rated five stars by this guest.</p>
+                <div class="review-author"><span class="review-avatar" aria-hidden="true">CH</span><span><strong>Cassie Han</strong></span></div>
+              </article>
+              <article class="review-card" role="group" aria-roledescription="slide" aria-label="9 of 10" aria-hidden="true">
+                <p class="review-stars" aria-label="5 out of 5 stars">★★★★★</p>
+                <p class="review-note">Rated five stars by this guest.</p>
+                <div class="review-author"><span class="review-avatar" aria-hidden="true">MA</span><span><strong>M. N. Anilnayaka</strong></span></div>
+              </article>
+              <article class="review-card" role="group" aria-roledescription="slide" aria-label="10 of 10" aria-hidden="true">
+                <p class="review-stars" aria-label="5 out of 5 stars">★★★★★</p>
+                <p class="review-note">Rated five stars by this guest.</p>
+                <div class="review-author"><span class="review-avatar" aria-hidden="true">NP</span><span><strong>Nirmal Pandey</strong></span></div>
+              </article>
+            </div>
+          </div>
+          <div class="carousel-controls">
+            <button class="carousel-arrow" type="button" data-carousel-prev aria-label="Previous review">&#8592;</button>
+            <div class="carousel-dots" data-carousel-dots aria-label="Choose a review"></div>
+            <button class="carousel-arrow" type="button" data-carousel-next aria-label="Next review">&#8594;</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="visit-section" id="visit" aria-labelledby="visit-title">
+      <div class="container visit-layout">
+        <div class="visit-copy reveal">
+          <p class="eyebrow">Visit the sound studio</p>
+          <h2 id="visit-title">Thamel, Kathmandu</h2>
+          <p>Singing bowls, gongs, and guided sound sessions.</p>
+        </div>
+        <div class="map-card reveal">
+          <iframe
+            title="Map showing Third Eye Healing and Yoga Center in Thamel, Kathmandu"
+            src="https://maps.google.com/maps?q=Third+Eye+Healing+and+Yoga+Center%2C+Ashok+Galli%2C+Kathmandu+44600&t=&z=16&ie=UTF8&iwloc=&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen
+          ></iframe>
+          <div class="map-info-card">
+            <p class="map-info-card__title">Third Eye Healing and Yoga Center</p>
+            <address>Thamel, Kathmandu, Bagmati Province 44600</address>
+            <p><strong>Opening hours</strong><br />Every day, 7:00 AM to 8:00 PM</p>
+            <a class="map-directions" href="https://www.google.com/maps/dir/?api=1&amp;destination=Third+Eye+Healing+and+Yoga+Center%2C+Ashok+Galli%2C+Kathmandu+44600" target="_blank" rel="noopener noreferrer">Get Directions <span aria-hidden="true">&#8599;</span></a>
+          </div>
         </div>
       </div>
     </section>
@@ -148,8 +270,8 @@
         </nav>
         <nav class="footer-col" aria-label="Services">
           <span class="footer-heading">Services</span>
-          <a href="classes.html">Yoga Classes</a>
-          <a href="events.html">Retreats</a>
+          <a href="classes.html#sound-healing">Sound Healing</a>
+          <a href="classes.html#yoga">Yoga Classes</a>
         </nav>
         <nav class="footer-col" aria-label="Discover">
           <span class="footer-heading">Discover</span>
@@ -158,7 +280,7 @@
         </nav>
         <div class="footer-col footer-contact">
           <span class="footer-heading">Visit Us</span>
-          <span>Thamel, Kathmandu</span>
+          <span>Thamel, Kathmandu 44600</span>
           <a href="tel:+9779851203719">985-1203719</a>
         </div>
       </div>
@@ -169,30 +291,30 @@
           target="_blank"
           rel="noopener"
           aria-label="Instagram"
-          >ig</a
+          ><img src="https://cdn.simpleicons.org/instagram/ffffff" alt="" width="16" height="16" loading="lazy" /></a
         >
         <a
           href="https://www.facebook.com/profile.php?id=61592808584287"
           target="_blank"
           rel="noopener"
           aria-label="Facebook"
-          >f</a
+          ><img src="https://cdn.simpleicons.org/facebook/ffffff" alt="" width="16" height="16" loading="lazy" /></a
         >
         <a
           href="https://wa.me/9779851203719"
           target="_blank"
           rel="noopener"
           aria-label="WhatsApp"
-          >wa</a
+          ><img src="https://cdn.simpleicons.org/whatsapp/ffffff" alt="" width="16" height="16" loading="lazy" /></a
         >
         <a
           href="mailto:thirdeyehealingandyogacenter@gmail.com"
           aria-label="Email"
-          >@</a
+          ><img src="assets/icons/mail.svg" alt="" width="16" height="16" /></a
         >
       </div>
       <div class="footer-bottom">
-        © 2026 Third Eye Healing Centre. All rights reserved.
+        © 2026 Third Eye Healing. All rights reserved. Designed &amp; Developed by Utkrista Adhikari.
       </div>
     </footer>
 
